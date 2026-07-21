@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moodshelf(prototype)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>How do you want to feel today?</h1>
+
+
+        <div class="mood-buttons">
+
+            <button onclick="selectMood('Happy',this)">Happy 😁</button>
+
+            <button onclick="selectMood('Sad',this)">Sad 😭</button>
+
+            <button onclick="selectMood('Relaxed',this )">Relaxed 😎</button>
+
+            <button onclick="selectMood('Excited',this)">Excited 🤩</button>
+
+            <button onclick="selectMood('Romantic',this)">Romantic 🥰</button>
+
+            <button onclick="selectMood('Curious',this)">Curious 🤔</button>
+
+            <button onclick="selectMood('Angry',this)">Angry 🔥</button>
+
+            
+        </div>
+
+        <h2 id="selected-mood"></h2>
+
+<h2>What do you want?</h2>
+
+<div class="type-buttons">
+
+    <button onclick="selectType('Movie',this)">
+        Movies
+    </button>
+
+    <button onclick="selectType('Book',this)">
+        Books
+    </button>
+
+    <button onclick="selectType('Both',this)">
+        Both
+    </button>
+
+</div>
+
+<h2 id="selected-type"></h2>
+
+<button class="recommend-button" onclick="getRecommendations()">
+    Let's gooo
+</button>
+
+<div id="recommendations"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
