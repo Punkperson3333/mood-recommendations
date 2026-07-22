@@ -30,4 +30,8 @@ public class RecommendationController {
 
         return repository.findByMoodAndType(mood, type);
     }
+    @GetMapping("/")
+    public String home() {
+        return "Mood Recommendations Backend is running!";
+    }
 }
