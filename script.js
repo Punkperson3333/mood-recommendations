@@ -48,7 +48,7 @@ function getRecommendations() {
     }
 
     fetch(
-        `http://localhost:8081/api/recommendations?mood=${selectedMood}&type=${selectedType}`
+        `https://mood-recommendations-backend.onrender.com/api/recommendations?mood=${encodeURIComponent(selectedMood)}&type=${encodeURIComponent(selectedType)}`
     )
     .then(response => response.json())
     .then(data => {
