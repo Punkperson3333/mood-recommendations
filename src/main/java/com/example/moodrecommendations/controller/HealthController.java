@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthController {
 
     @GetMapping("/")
-    public String home() {
+    public String health() {
         return "Mood Recommendations Backend is running!";
     }
 }
